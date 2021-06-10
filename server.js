@@ -23,6 +23,6 @@ app.get("/", (req, res) => {
   res.send("<h1>API for Point Of Sales System</h1>");
 });
 
-const port = 5000 || process.env.PORT;
+const PORT = process.env.PORT || 5000;
 
-app.listen(port, () => console.log(`server running on port : ${port}`));
+app.listen(PORT, () => console.log(`server running on port : ${PORT}`));
